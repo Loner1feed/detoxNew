@@ -1,0 +1,219 @@
+@media screen and (max-width: 1200px) {
+  .articleBlock__row {
+    margin-bottom: 20px;
+  }
+  .articleBlock__row--centered img {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .mainBanner__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mainBanner__text {
+    margin-top: 30px;
+  }
+
+  .steps__row {
+    margin-bottom: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .steps__arrow {
+    display: none;
+  }
+  .steps__item {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .articleBlock__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articleBlock__row--centered {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .articleBlock__paragraphBig {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .articleBlock__paragraph {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .articleBlock__col {
+    width: 100%;
+  }
+  .articleBlock__col:first-child {
+    margin-right: 0;
+  }
+  .articleBlock__col img {
+    display: block;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .steps__item {
+    max-width: 100%;
+    border-radius: 50px;
+  }
+
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__form {
+    margin-bottom: 20px;
+  }
+  .contact__col {
+    width: 100%;
+    max-width: 600px;
+  }
+  .contact__col:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__separator {
+    margin-top: 20px;
+  }
+
+  .footer__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__col {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  .footer__icons {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .mainBanner__img img {
+    width: 100%;
+  }
+  .mainBanner .absolute {
+    display: none;
+  }
+  .mainBanner__title {
+    font-size: 24px;
+  }
+  .mainBanner__upperTitle {
+    font-size: 24px;
+  }
+  .mainBanner__subtitle {
+    margin-top: 20px;
+  }
+  .mainBanner__button {
+    margin-top: 20px;
+  }
+
+  .steps__item {
+    font-size: 14px;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .button {
+    font-size: 13px;
+  }
+
+  .header__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .header__link {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 13px;
+    padding: 15px 25px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .articleBlock__pin {
+    display: none;
+  }
+
+  .footer__pin {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .upperTitle {
+    font-size: 20px;
+  }
+
+  .instagram__flexRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .instagram__headRow {
+    margin-bottom: 20px;
+  }
+  .instagram__arrows {
+    margin-bottom: 20px;
+    height: 40px;
+    margin-top: 0;
+  }
+  .instagram__arrows .arrow {
+    margin-top: 0;
+  }
+
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .header__link {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
