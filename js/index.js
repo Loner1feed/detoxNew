@@ -23,4 +23,10 @@ $('.instagram__slider').slick({
             }
         }
     ]
+});
+
+$('.header__toggler').click(function() {
+    $('.header__nav').toggleClass('header__nav--open');
+    $('.header__toggler').toggleClass('header__toggler--open');
+    $('.content').toggleClass('content--open');
 })

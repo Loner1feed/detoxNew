@@ -22,6 +22,8 @@
         }
     }
 
+    
+
     .steps{
         &__row{
             margin-bottom: 0;
@@ -163,22 +165,83 @@
         }
     }
 
+    .content{
+        &--open{
+            &:before{
+                content:'';
+                display: block;
+                position: fixed;
+                z-index: 1;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0,0,0,0.2);
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
     .button{
         font-size: 13px;
     }
 
     .header{
-        &__wrap{
-            flex-direction: column;
-        }
 
         &__nav{
             margin-left: 0;
-            margin-top: 20px;
+            border-bottom: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: fixed;
+            right: 0;
+            top: 0;
+            background: #fff;
+            max-width: 230px;
+            z-index: 3;
+            height: 100vh;
+            padding-top: 80px;
+            padding-left: 30px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+            right: -230px;
+            transition: 0.3s;
+            &--open{
+                right: 0;
+            }
         }
 
         &__link{
-            font-size: 14px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        &__toggler{
+            display: block;
+            z-index: 10;
+            position: relative;
+            
+            .header__toggler-line{
+                transition: 0.3s;
+            }
+
+            &--open{
+                .header__toggler-line{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: 0.3s;
+                    &:first-child{
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+
+                    &:last-child{
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
         }
     }
 
@@ -232,15 +295,4 @@
         }
     }
 
-    .header{
-        &__nav{
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-
-        &__link{
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-    }
 }
