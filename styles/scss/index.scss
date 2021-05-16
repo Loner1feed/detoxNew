@@ -7,6 +7,8 @@ $accent: #5B1A80;
 body{
     font-family: 'montserrat';
     font-weight: 500;
+    background: url(../../img/bg.png);
+    background-size: cover;
 }
 
 *{
@@ -175,6 +177,10 @@ body{
 // article block
 .articleBlock{
     position: relative;
+    background: url(../../img/articleBlock-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top;
     &__wrap{
         padding-top: 105px;
         padding-bottom: 55px;
@@ -183,8 +189,8 @@ body{
     .article__pin{
         position: absolute;
         right: 0;
+        z-index: 1;
         top: 130px;
-        z-index: -1;
     }
 
     &__row{
@@ -221,7 +227,8 @@ body{
     &__paragraph{
         max-width: 505px;
         line-height: 25px;
-        
+        position: relative;
+        z-index: 2;
     }
 
     &__col{
@@ -310,7 +317,6 @@ body{
 
     &__wrap{
         padding-top: 100px;
-        padding-bottom: 110px;
     }
 
     &__headRow{
@@ -377,6 +383,14 @@ body{
 
 // contact block
 .contact{
+
+    background: url(../../img/contant-bg.png);
+    background-size: cover;
+    background-position: center top;
+
+    &__wrap{
+        padding-top: 220px;
+    }
 
     &__headRow{
         margin-bottom: 50px;
@@ -480,6 +494,7 @@ body{
     }
     img{
         position: absolute;
+        z-index: 2;
         right: 50%;
         top: 0;
         transform: translateX(50%)
@@ -493,6 +508,7 @@ body{
 // footer
 .footer{
     position: relative;
+    background: #fff;
     &__wrap{
         display: flex;
         padding-top: 70px;
@@ -503,7 +519,7 @@ body{
         position: absolute;
         left: 0;
         top: -70px;
-        z-index: -1;
+        z-index: 1;
     }
     
 
@@ -514,6 +530,8 @@ body{
         font-size: 11px;
         line-height: 20px;
         margin: 0px 10px;
+        position: relative;
+        z-index: 2;
     }
 
     .link{
