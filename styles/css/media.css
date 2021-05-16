@@ -17,6 +17,10 @@
     margin-top: 30px;
   }
 
+  .article__pin {
+    display: none;
+  }
+
   .steps__row {
     margin-bottom: 0;
     -ms-flex-wrap: wrap;

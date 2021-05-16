@@ -22,6 +22,10 @@
         }
     }
 
+    .article__pin{
+        display: none;
+    }
+
     
 
     .steps{
@@ -33,6 +37,8 @@
         &__arrow{
             display: none;  
         }
+
+        
 
         &__item{
             margin-right: 10px;
