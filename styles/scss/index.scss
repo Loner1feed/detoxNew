@@ -125,6 +125,7 @@ body{
             margin-bottom: 10px;
         }
 
+
         &-line{
             display: block;
             width: 100%;
@@ -489,6 +490,7 @@ body{
     position: relative;
     margin-top: -70px;
     padding-bottom: 50px;
+    
     &__first{
         margin-top: -20px;
     }
@@ -497,7 +499,10 @@ body{
         z-index: 2;
         right: 50%;
         top: 0;
-        transform: translateX(50%)
+        transform: translateX(50%);
+        width: 110vw;
+        max-width: 2000px;
+        min-width: 1630px;
     }
 
     &__second{
